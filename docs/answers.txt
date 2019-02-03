@@ -1,0 +1,52 @@
+(a) Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 948 bytes | 316.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'homework_branch' on GitHub by visiting:
+remote:      https://github.com/esillart/Assignment1/pull/new/homework_branch
+remote:
+To https://github.com/esillart/Assignment1.git
+ * [new branch]      homework_branch -> homework_branch
+
+(b) 5 commits have been done in total (3 by me, and the first 2 by Javier Escobar-Avila). The git command I used to find this information was "git log".
+
+(c) The .gitignore file was modified last on January 10th, 2019 at 16:45:38. The git command i used to find this information was "git log .gitignore".
+
+(d) 1. Branches are used to point to a specific commit. If a developer wants to start working from a commit they are not currently pointed to, branching is useful.
+
+    2. If one wants to include the work of a specific commit and all the parent commits, then "branching" to that commit would also be useful.
+
+(e)  git status shows which files have or have not been staged for commits and in which branches. It also shows untracked files. git log shows which files have been
+successfully added, committed, and pushed into the master respository.
+
+(f) The command to see commits for a specific file (Weapon.h) would be: git log --follow -- Weapon.h
+
+(g) THe command to see commits whos commit message contains the word "file" is: git log --grep=file
+
+(h) (I) Inheritance is when one class acquires the properties of another class. The class being inherited from is known as the "parent" and the inheriting class is 
+        known as the "child." The child acquires all the fields and methods of the parent class.
+
+    (II) Polymorphism is the ability for a child class object to take on the form of any class in its parent hierarchy and even itself.  Say there's a parent class
+    called CarbonOrganism. A child of that could be Mammal, and then a child to Mammal could be Human. A Human object could be an instance of the Human, Mammal, or 
+    CarbonOrganism class. This is polymorphism. 
+
+    (III) Encapsulation is used to hide the internal representation, or state of an object from the outside. It essentially hides information for safety. For example,
+    not allowing the direct manipulation of object data except in the form of getter and setter methods is a form of encapsulation. It restricts direct access and
+    forces the user to use a method to manipulate data. 
+
+
+(i) There are a few main differences between the Dictator and Lieutenants workflow and the Integration Manager workflow. One main difference noticed is that in 
+Integration Manager, each developer gets their own private repository. Changes are pushed into their own unique public repository, which then gets pulled by the 
+integration manager to finally push into the blessed repository.  For Dictator and Lieutenants, there is less "privacy".  Developers share pushes to a lieutenant
+repository. How many of these are dependent on the amount of developers. A dictator then pulls from all the lieutenant repositories, and finally pushes onto the 
+blessed repository. 
+
+(j) A team of 100 developers would most likely benefit more from Dictators and Lieutenants workflow because there is more teamwork involved in sharing an initial 
+repository (the lieutenant repositories) rather than each owning their own private and public respositories as shown in the Integration Manager workflow. 100 individual
+public and private repositories might get messy to track, so limiting the amount of total repositories with the Dictators and Lieutrnants workflow would be more efficient.
+
+
