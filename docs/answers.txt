@@ -49,4 +49,5 @@ blessed repository.
 repository (the lieutenant repositories) rather than each owning their own private and public respositories as shown in the Integration Manager workflow. 100 individual
 public and private repositories might get messy to track, so limiting the amount of total repositories with the Dictators and Lieutrnants workflow would be more efficient.
 
-
+The RoleGame prototype does use polymorphism and also encapsulation. Each weapon class is a child of the parent Weapon class. For example, CommonSword and CommonSpear are
+child classes to the parent class, Weapon.  Encapsulation is also used in the methods getWeapon() and similar functions so that the user cannot directly access the private member data, and instead must use getter and setter functions to manipulate and view this data. 

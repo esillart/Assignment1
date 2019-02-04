@@ -17,7 +17,7 @@
  * defines the behavior of a simple hammer weapon (hitpoint = 25, if armor less than 30, ignores all armor points)
  *
  */
-Class SimpleHammer : public Weapon {
+class SimpleHammer : public Weapon {
 	public: 
 		SimpleHammer() : Weapon("Simple hammer", 25.0){ //Calls Weapon(name, hitpoints) constructor with values Simple Hammer and 25.0
 		}

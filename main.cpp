@@ -24,6 +24,7 @@ void simulateWeapon(Weapon * weapon, double armor) {
     cout << weapon->getName() << " inflicts " << weapon->hit(armor) << " when armor is " << armor << std::endl << std::endl;
 }
 
+
 /*
  * 
  */
@@ -36,6 +37,21 @@ int main(int argc, char** argv) {
     delete(weapon);
 
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+
+    weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+
+    weapon = WeaponFactory::getInstance()->getWeapon("crazy random sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+
+    weapon = WeaponFactory::getInstance()->getWeapon("shiny dagger");
     simulateWeapon(weapon, armor);
     delete(weapon);
 
